@@ -14,7 +14,7 @@ import slimcomp.entity.Payment;
 @RestController
 @RequestMapping(value = "/consumer")
 public class OrderController {
-	public static final String PAYMENT_URL = "http://localhost:8001";
+	public static final String PAYMENT_URL = "http://CLOUD-PROVIDER";
 
 	@Autowired
 	private RestTemplate restTemplate;

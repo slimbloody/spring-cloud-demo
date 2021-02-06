@@ -1,0 +1,2 @@
+1.tpl填写yaml变量
+2.maven版本依赖 类似brew的管理工具

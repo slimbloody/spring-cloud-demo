@@ -20,18 +20,16 @@ eureka:
     register-with-eureka: true
     fetchRegistry: true
     service-url:
-      #单机版
-      defaultZone: http://localhost:7000/eureka/
-      # 集群版
-      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://eureka7000.com:7000/eureka/,http://eureka7001.com:7001/eureka/
   instance:
     instance-id: consumer
-    #访问路径可以显示IP地址
+    # instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    # 访问路径可以显示IP地址
     prefer-ip-address: true
     #Eureka客户端向服务端发送心跳的时间间隔，单位为秒(默认是30秒)
-    lease-renewal-interval-in-seconds: 30
+    lease-renewal-interval-in-seconds: 1
     #Eureka服务端在收到最后一次心跳后等待时间上限，单位为秒(默认是90秒)，超时将剔除服务
-    lease-expiration-duration-in-seconds: 90
+    lease-expiration-duration-in-seconds: 2
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
