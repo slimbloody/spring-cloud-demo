@@ -26,6 +26,19 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-project-info-reports-plugin</artifactId>
+      <version>3.0.0</version>
+      <type>maven-plugin</type>
+    </dependency>
+
+    <dependency>
       <groupId>slimcomp</groupId>
       <artifactId>common-api</artifactId>
       <version>1.0-SNAPSHOT</version>
@@ -57,18 +70,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-configuration-processor</artifactId>
       <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
-      <scope>runtime</scope>
-      <optional>true</optional>
-    </dependency>
-
-
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>druid-spring-boot-starter</artifactId>
     </dependency>
 
     <dependency>
@@ -103,7 +104,7 @@
   </dependencies>
 
   <build>
-    <finalName>${name}</finalName>
+    <finalName>${project.name}</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -141,10 +142,10 @@
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
         </plugin>
-<!--        <plugin>-->
-<!--          <artifactId>maven-project-info-reports-plugin</artifactId>-->
-<!--          <version>3.0.0</version>-->
-<!--        </plugin>-->
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
 
         <plugin>
           <groupId>org.springframework.boot</groupId>

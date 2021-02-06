@@ -26,6 +26,13 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-project-info-reports-plugin</artifactId>
+      <version>3.0.0</version>
+      <type>maven-plugin</type>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
@@ -84,10 +91,10 @@
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
         </plugin>
-        <!--        <plugin>-->
-        <!--          <artifactId>maven-project-info-reports-plugin</artifactId>-->
-        <!--          <version>3.0.0</version>-->
-        <!--        </plugin>-->
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
 
         <plugin>
           <groupId>org.springframework.boot</groupId>
