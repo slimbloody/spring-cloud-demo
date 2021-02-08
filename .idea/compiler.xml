@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-api" />
-        <module name="cloud-consumer" />
+        <module name="cloud-provider-zk-1" />
         <module name="cloud-provider-2" />
         <module name="cloud-provider-1" />
+        <module name="cloud-provider-zk-2" />
         <module name="cloud-provider2" />
         <module name="eureka-server-2" />
+        <module name="cloud-consumer" />
         <module name="eureka-server-1" />
       </profile>
     </annotationProcessing>
