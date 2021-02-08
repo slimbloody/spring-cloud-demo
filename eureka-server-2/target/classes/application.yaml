@@ -12,9 +12,9 @@ eureka:
     hostname: eureka7002.com
   client:
     # 不向注册中心注册自己
-    register-with-eureka: false
+    register-with-eureka: true
     # 自己就是注册中心, 不需要检索服务
-    fetch-registry: false
+    fetch-registry: true
     service-url:
       #  查询地址 注册服务 都依赖这个地址
       # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

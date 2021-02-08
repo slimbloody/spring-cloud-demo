@@ -10,8 +10,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider1/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider-2/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-provider-zk-1/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-provider-zk-2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

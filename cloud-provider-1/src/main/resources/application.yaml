@@ -31,6 +31,8 @@ eureka:
     #Eureka服务端在收到最后一次心跳后等待时间上限，单位为秒(默认是90秒)，超时将剔除服务
     lease-expiration-duration-in-seconds: 2
 
+#    Hi, I know this issue is already closed but I noticed that the problem you had was actually related to the property eureka.instance.appname, and not really related to spring boot. If you want to make the cluster work, you need to use the same application name in both profiles.
+
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: slimcomp.entity # 所有Entity别名类所在包

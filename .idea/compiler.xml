@@ -8,10 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-api" />
-        <module name="cloud-provider-zk-1" />
         <module name="cloud-provider-2" />
         <module name="cloud-provider-1" />
-        <module name="cloud-provider-zk-2" />
         <module name="cloud-provider2" />
         <module name="eureka-server-2" />
         <module name="cloud-consumer" />
@@ -19,6 +17,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="cloud-provider-zk-1" target="1.8" />
+      <module name="cloud-provider-zk-2" target="1.8" />
       <module name="cloud-provider1" target="1.8" />
       <module name="cloud-provider2" target="1.8" />
       <module name="eureka-server" target="1.8" />
